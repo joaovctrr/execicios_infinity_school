@@ -1,0 +1,7 @@
+velocidade = float(input('Velocidade do veículo: '))
+valor_da_multa = 290 + ((velocidade - 80) * 20)
+
+if velocidade <= 80:
+    print('Você está no limite regulamentado da via.')
+else:
+    print(f'Você foi multado no valor de {valor_da_multa} reais.')
