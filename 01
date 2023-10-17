@@ -1,0 +1,8 @@
+aluno = input('Digite seu nome: ')
+idade = int(input('Digite sua idade: '))
+ano_nascimento = int(input('Digite o ano do seu nascimento: '))
+nota_avaliacao = float(input('Nota da avaliação mensal: '))
+matricula = True
+
+if matricula == True:
+    print(f'O aluno {aluno}, {idade} anos de idade, nascido no ano de {ano_nascimento}, estando devidamente matriculado nesta escola, obteve um total de {nota_avaliacao} pontos na prova de Lógica de Programação.')
