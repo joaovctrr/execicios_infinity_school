@@ -1,0 +1,28 @@
+# A- Escreva o código para a função que calcule a média aritmética das notas.
+def calcular_media(notas):
+    if not notas:
+        return 0
+    return sum(notas) / len(notas)
+
+# B- Escreva o código para o loop while que pede ao usuário que insira as notas dos alunos.
+
+notas_todos_alunos = []
+
+continuar = True
+while continuar:
+    notas_aluno = []  
+    while True:
+        nota_str = input("Insira a nota do aluno, ou digite 'fim' para parar( para encerrar totalmente a aplicação, confirme novamente a palavra 'fim'): ")
+        if nota_str.lower() == 'fim':
+          break  # Encerra o loop while interno quando o usuário digita 'fim'
+        nota = float(nota_str)
+        notas_aluno.append(nota)
+    if notas_aluno:  # Verifica se a lista de notas do aluno não está vazia
+        notas_todos_alunos.append(notas_aluno)
+    else:
+        continuar = False  # Digitando 'FIM' novamente, a aplicação encerra o loop while externo se não houver notas para o aluno
+
+# C - Escreva o código para o loop for que imprime a média de cada aluno.
+for i, notas in enumerate(notas_todos_alunos, start=1):
+    media = calcular_media(notas)
+    print(f'A média do aluno {i} é: {media:.2f}')
