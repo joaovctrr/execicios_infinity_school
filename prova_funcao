@@ -1,0 +1,18 @@
+# A
+
+def maior_numero(a, b):
+    if a > b:
+        return a
+    else:
+        return b
+
+resultado = maior_numero(21, 13)
+print("O maior número é:", resultado)
+
+# B
+
+def maior_numero(a, b):
+    return max(a, b)
+
+resultado = maior_numero(21, 13)
+print("O maior número é:", resultado)
