@@ -1,0 +1,12 @@
+def media(lista):
+    if not lista:
+        return 0  
+    soma = sum(lista)
+    print(f'A soma dos números da lista é: {soma}')
+    print(f'A quantidade de números na lista é: {len(lista)}')
+    return soma / len(lista)  
+    print(len(lista))
+
+numeros = [12,13,14,15,21]
+resultado = media(numeros)
+print("A média dos números é:", resultado)
