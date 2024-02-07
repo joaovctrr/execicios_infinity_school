@@ -1,0 +1,23 @@
+pessoas = {
+    "João": 23,
+    "Maria": 28,
+    "Pedro": 35,
+    "Lucas": 19
+}
+# A 
+idade_joao = pessoas["João"]
+print("Idade de João:", idade_joao)
+
+# B
+pessoas["Ana"] = 31
+print(pessoas)
+
+# C 
+def maior_idade(dicionario):
+    maior_idade = max(dicionario.values())
+    for nome, idade in dicionario.items():
+        if idade == maior_idade:
+            return nome
+
+nome_maior_idade = maior_idade(pessoas)
+print("A pessoa com a maior idade é:", nome_maior_idade)
